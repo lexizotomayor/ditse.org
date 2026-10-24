@@ -1,0 +1,23 @@
+{
+  "title": "The Boat Under the Name",
+  "date": "2026-10-24T00:00:00Z",
+  "author": "Lexi Zotomayor",
+  "period": "Ancient Roots",
+  "image": "",
+  "imageAlt": "A plank-built balangay boat, drawn in line",
+  "dek": "Long before the galleons, boats sewn from planks carried people and goods across these islands. A note on the balangay of Butuan, and why it sails under this site's name.",
+  "tags": ["balangay", "butuan", "boats", "pre-colonial"],
+  "timelineTitle": "The balangay, briefly",
+  "timeline": [
+    { "date": "c. 4th c.", "what": "Earliest dated Butuan boat built" },
+    { "date": "10th–13th c.", "what": "Butuan trades with China and its neighbours" },
+    { "date": "1001", "what": "A Butuan mission appears in Song dynasty records" },
+    { "date": "1976", "what": "Boats found in Ambangan, Libertad, Butuan" },
+    { "date": "2009–10", "what": "A replica sails around the archipelago and beyond" }
+  ],
+  "bodyText": "{{< note >}}Sample post. The personal passages in brackets are placeholders for you to replace, and the dates should be checked against your sources before publishing.{{< /note >}}\n\nThe first thing you notice about a balangay is what it does not have. There are no nails. There is no keel in the way a European shipwright would mean it. There are planks, cut from a single log and shaped by hand, joined edge to edge with wooden pegs and lashed from the inside to ribs that were added after the hull was already a hull.\n\nIt is a boat built from the outside in. And for a long time it was how people in these islands moved: between rivers and coasts, between islands, and out into the wider sea.\n\n## Found in a rice field\n\nIn 1976, people digging in Ambangan, in the barangay of Libertad in Butuan, struck wood. What they found turned out to be the remains of several plank boats, preserved for centuries in waterlogged ground. Archaeologists from the National Museum came, and over the years more boats were identified at the site.\n\nThe oldest of them has been dated to around the fourth century. Others are later, from the period when Butuan was a trading port that sent missions to China and dealt in gold, pottery and goods from across the region.\n\n[Personal: when and how you first saw a balangay, or the replica, or the site. What struck you.]\n\n## How a balangay was made\n\nThe method is called edge-joined, or plank-and-lug. Builders shaped each plank so that small raised lugs stood out from its inner face. Planks were fitted edge to edge and held with hardwood dowels. Then ribs were laid across the inside and tied to the lugs with fibre. The hull came first; the frame followed.\n\nIt sounds fragile. It was not. A boat like this could flex with the water instead of fighting it, and could be taken apart, repaired and put back together.\n\n{{< pull cite=\"A boatbuilder's saying, often repeated\" >}}The sea does not break what bends with it.{{< /pull >}}\n\n## The word that stayed\n\nBalangay is also the root of barangay, the smallest unit of local government in the Philippines today. The idea, often told, is that a boatload of families arriving together became a community on land, and kept the boat's name.\n\nHistorians argue about how literal that story is. But the word survived three centuries of Spain and half a century of America, and every Filipino address still carries it.\n\n[Personal: your own barangay, or a memory of home that this connects to.]\n\n## Sailing again\n\nIn 2009 a group of Filipino sailors and mountaineers built replica balangays using the old method and sailed them around the archipelago and on to neighbouring countries. They wanted to show that the boats could do what the records said they did.\n\nThey could.\n\n## Why it is under the name\n\nThis site is called ditse, the word for the second-eldest sister: the one who is not quite in charge, but who remembers, and who tells you what happened when you were too young to notice. The balangay sails under the name because it is the oldest story I know about how we got here, and how we kept going.\n\n[Personal: one or two lines on what you hope this site will be.]\n\nIf you know more about the Butuan boats, or have seen the replicas, write below. I would like to hear it.",
+  "comments": [
+    { "name": "Ramon", "text": "My lolo was from Butuan and used to say the boats were found by accident when they were digging for a canal. Thank you for writing this.", "date": "2026-10-24T09:12:00Z" },
+    { "name": "Ana", "text": "I never knew barangay came from balangay. Sharing this with my kids.", "date": "2026-10-24T11:40:00Z" }
+  ]
+}

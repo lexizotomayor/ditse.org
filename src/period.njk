@@ -1,0 +1,12 @@
+---
+# One listing per category → /ancient-roots/, /colonial/, /war/, /afar/
+pagination:
+  data: periods
+  size: 1
+  alias: p
+permalink: "/{{ p.key }}/"
+layout: home.njk
+eleventyComputed:
+  title: "{{ p.name }}"
+  description: "{{ p.note }}"
+---

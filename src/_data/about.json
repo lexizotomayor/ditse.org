@@ -1,0 +1,29 @@
+{
+  "lead": "Notes from home and abroad: essays on Philippine history and culture, with a dash of my own experience.",
+  "intro": [
+    "I’m Lexi Zotomayor, a journalist who has spent years writing about islands, archives and the people who keep the past alive. Ditse is where I write about home: the Philippines, and the Filipinos who carry it with them abroad.",
+    "These are not textbooks. They are field notes: what I read, where I went, who I asked and what I still wonder about. Mga sanaysay sa kasaysayang may saysay: essays on a history that means something."
+  ],
+  "findHeading": "Four threads",
+  "find": [
+    {
+      "title": "Ancient Roots",
+      "text": "Balangay, baybayin, the terraces and the peoples who were here before the galleons."
+    },
+    {
+      "title": "Colonial Encounters",
+      "text": "Three centuries of Spain, then America: faith, trade, revolt and the making of a nation."
+    },
+    {
+      "title": "War and Memory",
+      "text": "Revolution, the Pacific War, and how families and towns remember them."
+    },
+    {
+      "title": "Notes from Afar",
+      "text": "Balikbayan boxes, overseas work, and the Philippines we carry abroad."
+    }
+  ],
+  "closing": "When I get something wrong, tell me. I fix errors and note the change.",
+  "portrait": "",
+  "portraitAlt": "Lexi Zotomayor"
+}

@@ -1,0 +1,6 @@
+{#- The "ditse" mark: the Philippine sun is the dot of the i; the balangay sails under "tse". -#}
+{% macro wordmark(tag="span", link=false, boat=true) %}
+{%- if link %}<a class="wordmark{% if boat %} has-boat{% endif %}" href="/" aria-label="ditse home">{% else %}<div class="wordmark{% if boat %} has-boat{% endif %}">{% endif -%}
+<{{ tag }} class="taga" aria-label="ditse">d<span class="i">ı<img class="sun" src="/assets/ph-sun.svg" alt="" aria-hidden="true" width="100" height="100"></span><span class="tse">tse{% if boat %}<img class="boat" src="/assets/ditse-boat.png" alt="" aria-hidden="true" width="1182" height="912">{% endif %}</span></{{ tag }}>
+{%- if link %}</a>{% else %}</div>{% endif %}
+{% endmacro %}

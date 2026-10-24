@@ -1,0 +1,226 @@
+# Decap CMS — content editor for ditse, at /admin/
+# Every save is a commit to GitHub, which triggers a Netlify rebuild (1–2 min).
+
+# Editors log in with Netlify Identity (email invite + password); Git Gateway
+# commits their changes to GitHub for them.
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}”"
+    deleteMedia: "Delete “{{path}}”"
+
+# Lets `npx decap-server` edit your local copy when testing on localhost.
+local_backend: true
+
+site_url: https://ditse.org
+display_url: https://ditse.org
+
+# Photos uploaded in the editor. The site resizes them when it builds.
+media_folder: src/assets/uploads/cms
+public_folder: /assets/uploads/cms
+
+# The pieces a story body is built from (shared by the full and short versions).
+x-blocks: &blocks
+  - label: Paragraph
+    name: p
+    widget: object
+    summary: "{{fields.text}}"
+    fields:
+      - { label: Text, name: text, widget: text }
+  - label: Heading
+    name: h
+    widget: object
+    summary: "{{fields.text}}"
+    fields:
+      - { label: Text, name: text, widget: string }
+  - label: Photo
+    name: img
+    widget: object
+    summary: "{{fields.caption}}"
+    fields:
+      - { label: Photo, name: src, widget: image, choose_url: false }
+      - { label: "Description (for screen readers)", name: alt, widget: string, required: false }
+      - { label: Caption, name: caption, widget: text, required: false }
+  - label: Quote
+    name: quote
+    widget: object
+    summary: "{{fields.text}}"
+    fields:
+      - { label: Text, name: text, widget: text }
+  - label: Pull quote (big)
+    name: pull
+    widget: object
+    summary: "{{fields.text}}"
+    fields:
+      - { label: Quote, name: text, widget: text }
+      - { label: "Who said it", name: cite, widget: string, required: false }
+  - label: Editor's note
+    name: note
+    widget: object
+    summary: "{{fields.text}}"
+    fields:
+      - { label: Text, name: text, widget: text }
+  - label: List
+    name: list
+    widget: object
+    fields:
+      - { label: Numbered, name: ordered, widget: boolean, default: false, required: false }
+      - { label: Items, name: items, widget: list, field: { label: Item, name: item, widget: text } }
+  - label: Photo gallery (shown in "From the archive")
+    name: gallery
+    widget: object
+    fields:
+      - label: Photos
+        name: images
+        widget: list
+        summary: "{{fields.caption}}"
+        fields:
+          - { label: Photo, name: src, widget: image, choose_url: false }
+          - { label: Description, name: alt, widget: string, required: false }
+          - { label: Caption, name: caption, widget: text, required: false }
+  - label: YouTube video
+    name: embed
+    widget: object
+    summary: "{{fields.src}}"
+    fields:
+      - { label: "YouTube link", name: src, widget: string, hint: "e.g. https://www.youtube.com/watch?v=…" }
+
+collections:
+  # ------------------------------------------------------------------ Stories
+  - name: stories
+    label: Stories
+    label_singular: Story
+    description: "Every story on the site. Photos at the very end of the body (and any photo gallery) appear under “From the archive” in the full version."
+    folder: src/_data/stories_raw
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{period}} · {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: [date, title, period]
+    view_groups:
+      - { label: Period, field: period }
+    preview_path: "stories/{{slug}}/"
+    editor: { preview: false }
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "Hide from the site (draft)", name: draft, widget: boolean, default: false, required: false }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss[Z]", picker_utc: true, default: "{{now}}" }
+      - { label: Author, name: author, widget: string, default: "Lexi Zotomayor" }
+      - label: Period
+        name: period
+        widget: select
+        options:
+          - { label: "01 Ancient Roots", value: "Ancient Roots" }
+          - { label: "02 Colonial Encounters", value: "Colonial Encounters" }
+          - { label: "03 War and Memory", value: "War and Memory" }
+          - { label: "04 Notes from Afar", value: "Notes from Afar" }
+      - { label: "Lead photo", name: image, widget: image, choose_url: false, hint: "Shown at the top of the story and on its card." }
+      - { label: "Lead photo description (for screen readers)", name: imageAlt, widget: string, required: false }
+      - { label: "Dek (subtitle)", name: dek, widget: text, required: false, hint: "One or two sentences under the title. Also used on the featured story." }
+      - { label: "Excerpt", name: excerpt, widget: text, required: false, hint: "For search engines and sharing. Taken from the first paragraph if left empty." }
+      - { label: Tags, name: tags, widget: list, required: false, allow_add: true }
+      - label: Story
+        name: bodyText
+        widget: markdown
+        required: false
+        buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list]
+        editor_components: [photo, youtube, pull, note]
+        hint: "Paste the whole story here. A blank line starts a new paragraph. Use the + button (or the toolbar) to add a photo, YouTube video, pull quote or editor's note wherever you want it. Photos placed at the very end appear under “From the archive”."
+      - label: "Story, block by block (older stories)"
+        name: blocks
+        widget: list
+        required: false
+        collapsed: true
+        types: *blocks
+        typeKey: type
+        hint: "Stories imported from WordPress are stored here. Leave it empty for new stories. If the Story box above has text, it is used instead of this."
+      - { label: "Reading time, minutes", name: readMin, widget: number, value_type: int, min: 1, required: false, hint: "Worked out from the length if left empty." }
+      - label: "Short version"
+        name: shortText
+        widget: markdown
+        required: false
+        buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list]
+        editor_components: [photo, youtube, pull, note]
+        hint: "A plain-style rewrite, about 40% of the length. Paste it in one go. When there is one, readers get a Short / Full toggle."
+      - label: "Short version, block by block (older stories)"
+        name: short
+        widget: list
+        required: false
+        collapsed: true
+        types: *blocks
+        typeKey: type
+      - { label: "Short version reading time, minutes", name: shortMin, widget: number, value_type: int, min: 1, required: false }
+      - { label: "Timeline title", name: timelineTitle, widget: string, required: false, hint: "e.g. The Philippine Revolution" }
+      - label: Timeline
+        name: timeline
+        widget: list
+        required: false
+        summary: "{{fields.date}} — {{fields.what}}"
+        fields:
+          - { label: Date, name: date, widget: string, hint: "Short, e.g. 15 Jun 44" }
+          - { label: What happened, name: what, widget: string }
+      - label: Comments
+        name: comments
+        widget: list
+        required: false
+        default: []
+        hint: "Approved comments. Copy them from Netlify → Forms → comments."
+        summary: "{{fields.name}}: {{fields.text}}"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Comment, name: text, widget: text }
+          - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss[Z]", picker_utc: true, default: "{{now}}" }
+
+  # ------------------------------------------------------------------ Pages
+  - name: pages
+    label: Pages
+    editor: { preview: false }
+    files:
+      - label: Home page
+        name: settings
+        file: src/_data/settings.json
+        fields:
+          - label: Featured story
+            name: featured
+            widget: relation
+            collection: stories
+            value_field: "{{slug}}"
+            search_fields: [title]
+            display_fields: [title]
+            hint: "The big story at the top of the home page."
+      - label: About
+        name: about
+        file: src/_data/about.json
+        fields:
+          - { label: "Heading", name: lead, widget: text }
+          - { label: "Introduction", name: intro, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: "Categories heading", name: findHeading, widget: string }
+          - label: "Categories (in order: 01, 02, 03, 04)"
+            name: find
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - { label: "Closing paragraph", name: closing, widget: text }
+          - { label: Portrait, name: portrait, widget: image, required: false, choose_url: false, hint: "Optional. Shown beside the introduction." }
+          - { label: "Portrait description", name: portraitAlt, widget: string, required: false }
+      - label: Privacy
+        name: privacy
+        file: src/_data/privacy.json
+        fields:
+          - { label: "Updated", name: updated, widget: string, hint: "e.g. September 2026" }
+          - { label: "Lead line", name: lead, widget: text }
+          - label: Sections
+            name: sections
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Text, name: body, widget: text }

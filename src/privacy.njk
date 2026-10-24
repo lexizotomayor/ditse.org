@@ -1,0 +1,19 @@
+---
+layout: page.njk
+title: Privacy
+pageName: privacy
+pageNum: "03"
+permalink: /privacy/
+description: Ditse is a reading site. I collect as little as I can.
+---
+{#- Edited in the CMS (Pages → Privacy), stored in src/_data/privacy.json. Draft copy; not legal advice. -#}
+<article class="privacy">
+  <div class="updated"><span class="cat cat--flat">updated</span><span>{{ privacy.updated }}</span></div>
+  <p class="page-lead">{{ privacy.lead }}</p>
+  <div class="policy">
+    {%- for item in privacy.sections %}
+    <section><span class="big-n" aria-hidden="true">{{ loop.index | pad2 }}</span><div><h2>{{ item.heading }}</h2><p>{{ item.body }}</p></div></section>
+    {%- endfor %}
+  </div>
+  <p>Questions: <a class="u-red" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</article>

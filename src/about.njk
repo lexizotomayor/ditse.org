@@ -1,0 +1,32 @@
+---
+layout: page.njk
+title: About
+pageName: about
+pageNum: "01"
+permalink: /about/
+description: Notes from home and abroad — essays on Philippine history and culture, with a dash of personal experience.
+---
+{#- Text and portrait are edited in the CMS (Pages → About), stored in src/_data/about.json. -#}
+<article class="about">
+  <h2 class="page-lead">{{ about.lead }}</h2>
+  <div class="writer{% if not about.portrait %} writer--solo{% endif %}">
+    {%- if about.portrait %}
+    <div class="portrait"><img src="{{ about.portrait }}" alt="{{ about.portraitAlt }}" width="600" height="720"></div>
+    {%- endif %}
+    <div class="bio">
+      {%- for para in about.intro %}
+      <p>{{ para }}</p>
+      {%- endfor %}
+    </div>
+  </div>
+  <div class="list-rows">
+    <h3 class="kicker">{{ about.findHeading }}</h3>
+    {%- for p in periods %}
+    {%- set f = about.find[loop.index0] %}
+    <a href="/{{ p.key }}/"><span class="big-n">{{ p.num }}</span><span class="txt"><b>{{ f.title if f else p.name }}</b><span>{{ f.text if f else p.note }}</span></span></a>
+    {%- endfor %}
+  </div>
+  {%- if about.closing %}
+  <p class="about-closing">{{ about.closing }}</p>
+  {%- endif %}
+</article>
