@@ -1,23 +1,40 @@
 {
-  "title": "The Boat Under the Name",
-  "date": "2026-10-24T00:00:00Z",
-  "author": "Lexi Zotomayor",
-  "period": "Ancient Roots",
-  "image": "",
-  "imageAlt": "A plank-built balangay boat, drawn in line",
-  "dek": "Long before the galleons, boats sewn from planks carried people and goods across these islands. A note on the balangay of Butuan, and why it sails under this site's name.",
-  "tags": ["balangay", "butuan", "boats", "pre-colonial"],
-  "timelineTitle": "The balangay, briefly",
   "timeline": [
-    { "date": "c. 4th c.", "what": "Earliest dated Butuan boat built" },
-    { "date": "10th–13th c.", "what": "Butuan trades with China and its neighbours" },
-    { "date": "1001", "what": "A Butuan mission appears in Song dynasty records" },
-    { "date": "1976", "what": "Boats found in Ambangan, Libertad, Butuan" },
-    { "date": "2009–10", "what": "A replica sails around the archipelago and beyond" }
+    {
+      "date": "c. 4th c.",
+      "what": "Earliest dated Butuan boat built"
+    },
+    {
+      "date": "10th–13th c.",
+      "what": "Butuan trades with China and its neighbours"
+    },
+    {
+      "date": "1001",
+      "what": "A Butuan mission appears in Song dynasty records"
+    },
+    {
+      "date": "1976",
+      "what": "Boats found in Ambangan, Libertad, Butuan"
+    },
+    {
+      "date": "2009–10",
+      "what": "A replica sails around the archipelago and beyond"
+    }
   ],
-  "bodyText": "{{< note >}}Sample post. The personal passages in brackets are placeholders for you to replace, and the dates should be checked against your sources before publishing.{{< /note >}}\n\nThe first thing you notice about a balangay is what it does not have. There are no nails. There is no keel in the way a European shipwright would mean it. There are planks, cut from a single log and shaped by hand, joined edge to edge with wooden pegs and lashed from the inside to ribs that were added after the hull was already a hull.\n\nIt is a boat built from the outside in. And for a long time it was how people in these islands moved: between rivers and coasts, between islands, and out into the wider sea.\n\n## Found in a rice field\n\nIn 1976, people digging in Ambangan, in the barangay of Libertad in Butuan, struck wood. What they found turned out to be the remains of several plank boats, preserved for centuries in waterlogged ground. Archaeologists from the National Museum came, and over the years more boats were identified at the site.\n\nThe oldest of them has been dated to around the fourth century. Others are later, from the period when Butuan was a trading port that sent missions to China and dealt in gold, pottery and goods from across the region.\n\n[Personal: when and how you first saw a balangay, or the replica, or the site. What struck you.]\n\n## How a balangay was made\n\nThe method is called edge-joined, or plank-and-lug. Builders shaped each plank so that small raised lugs stood out from its inner face. Planks were fitted edge to edge and held with hardwood dowels. Then ribs were laid across the inside and tied to the lugs with fibre. The hull came first; the frame followed.\n\nIt sounds fragile. It was not. A boat like this could flex with the water instead of fighting it, and could be taken apart, repaired and put back together.\n\n{{< pull cite=\"A boatbuilder's saying, often repeated\" >}}The sea does not break what bends with it.{{< /pull >}}\n\n## The word that stayed\n\nBalangay is also the root of barangay, the smallest unit of local government in the Philippines today. The idea, often told, is that a boatload of families arriving together became a community on land, and kept the boat's name.\n\nHistorians argue about how literal that story is. But the word survived three centuries of Spain and half a century of America, and every Filipino address still carries it.\n\n[Personal: your own barangay, or a memory of home that this connects to.]\n\n## Sailing again\n\nIn 2009 a group of Filipino sailors and mountaineers built replica balangays using the old method and sailed them around the archipelago and on to neighbouring countries. They wanted to show that the boats could do what the records said they did.\n\nThey could.\n\n## Why it is under the name\n\nThis site is called ditse, the word for the second-eldest sister: the one who is not quite in charge, but who remembers, and who tells you what happened when you were too young to notice. The balangay sails under the name because it is the oldest story I know about how we got here, and how we kept going.\n\n[Personal: one or two lines on what you hope this site will be.]\n\nIf you know more about the Butuan boats, or have seen the replicas, write below. I would like to hear it.",
-  "comments": [
-    { "name": "Ramon", "text": "My lolo was from Butuan and used to say the boats were found by accident when they were digging for a canal. Thank you for writing this.", "date": "2026-10-24T09:12:00Z" },
-    { "name": "Ana", "text": "I never knew barangay came from balangay. Sharing this with my kids.", "date": "2026-10-24T11:40:00Z" }
-  ]
+  "period": "Ancient Roots",
+  "dek": "Long before the galleons, boats sewn from planks carried people and goods across these islands. A note on the balangay of Butuan, and why it sails under this site's name.",
+  "author": "Lexi Zotomayor",
+  "imageAlt": "In this illustration, ancient Butuan settlers prepare for a long voyage. ",
+  "date": "2026-10-24T19:19:00Z",
+  "bodyText": "{{< note >}}{{< /note >}}\n\nIt takes a certain humility to admit that one’s own heritage lay overlooked for nearly half a century. In the Philippine public schools of my youth, social studies lessons repeated themselves with dependable regularity. Year after year,printed on rough paper that smelled of vinegar and pulp, we read about an ancient vessel named the *Balangay*. We took in the facts as brief, harmless curiosities, never suspecting the vast maritime legacy sitting just beneath the printed line.\n\nIt was only recently—now well past the mid-century mark of my own life—that I stopped to look closely at what that boat actually was. To discover in one’s fifties that one’s ancestors were not merely lucky drifters on the tide, but master shipwrights and oceanic architects, produces a feeling that sits somewhere between awe and self-reproach. If there were a civil tribunal for cultural negligence, I should plead guilty without defense and accept a thorough whipping in the derriere. We were maritime experts of the highest order, and I had treated the news as a third-grade memory exercise.\n\nConsider how these ships were actually put together. If tasked with building a watercraft to cross an ocean today, most people would head straight for galvanized nails, steel bolts, and waterproof sealant. The ancient shipwrights of Butuan took a remarkably different approach: they used no metal at all. Long before Europeans brought their heavy ironware to Southeast Asia, precolonial craftsmen shaped hardwood planks with hand axes and carved tiny wooden pegs to fit them together.\n\nThe joinery was an engineering marvel. Planks were fitted edge-to-edge, drilled with precision holes, and bound tightly with coconut husk fiber and tough plant vines. This lashed-lug and sewn-boat method produced a vessel that was strong, yet entirely flexible. Where a rigid European galleon would fight the pounding ocean waves, the *Balangay*flexed, riding over the swells with remarkable grace.\n\nAnd what a bustling world these boats created. Dating from as early as the tenth century, the eleven excavated hulls in Agusan Del Norte reveal that Butuan was not a sleepy fishing village patiently waiting for foreign mapmakers to arrive.It was a thriving, cosmopolitan trade hub. A tenth-century resident could walk down to the harbor and find merchants trading fine Chinese porcelain, Thai stamped pottery, Persian glassware, and intricate gold ornaments crafted right on the shore.\n\nThe *Balangay* held this sprawling maritime network together. Navigating without magnetic compasses or GPS, native sailors read the star patterns, studied the flight paths of sea birds, and felt the warm ocean currents through the soles of their feet. They rode the monsoon winds like clockwork, linking Mindanao to Borneo, Java, Sumatra, and beyond—turning the vast Pacific into a shared neighborhood.\n\nYet, in our collective memory, the *Balangay* was allowed to sink beneath colonial history. Our textbooks, shaped by centuries of looking outward for validation, treated pre-Hispanic life as a brief prelude rather than a foundation. The physical remnants of the boats themselves are fragile things. To preserve wood that has slept in wet earth for a millennium requires chemical treatments, controlled oxygen, and museum cases. Most of us will never stand beside those darkened, ancient timbers in person.\n\nWhich brings me to the small icon resting on this website, *sites.org*.\n\nWhen it came time to choose a mark for this digital space, I returned to that ancient hull. In a world connected by fiber-optic cables and invisible signals, the *Balangay* feels strikingly modern. It represents the original network—a vessel designed not just to transport goods, but to carry culture, language, and community across open waters. The word *barangay*, our fundamental unit of society, comes directly from this boat. Towns were not built around public squares first; they were built around the wooden ribs of the ships that brought people together.\n\nI place the *Balangay* here as a quiet act of restitution. It is a reminder to myself, and perhaps to anyone who lands on this page, that we carry deep currents within us, even when we are slow to recognize them. We do not need modern satellite receivers to know where we are going, so long as we remember the sophistication of those who sailed by the stars before us.\n\nIt took me nearly fifty years to look beneath the simple textbook drawing and find the living vessel underneath. The boat under the name is small on the screen, but in the mind, it carries a very proud cargo.\n\n\n\n{{< pull >}}{{< /pull >}}",
+  "comments": [],
+  "timelineTitle": "The balangay, briefly",
+  "title": "The Boat Under the Name",
+  "tags": [
+    "balangay",
+    "butuan",
+    "boats",
+    "pre-colonial"
+  ],
+  "image": "/assets/uploads/cms/balangay.jpg"
 }
