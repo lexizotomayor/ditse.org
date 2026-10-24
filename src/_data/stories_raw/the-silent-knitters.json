@@ -1,18 +1,4 @@
 {
-  "title": "The Silent Knitters",
-  "date": "2026-10-24T08:00:00Z",
-  "author": "Lexi Zotomayor",
-  "period": "War and Memory",
-  "image": "/assets/uploads/cms/camp-holmes-women-children.jpg",
-  "imageAlt": "Group photograph of women and young children seated on a grassy slope in front of a wooden house in Baguio",
-  "dek": "In an internment camp in Baguio, thirty-two women knitted socks for the same man on the eve of his escape, and not one of them told another.",
-  "tags": [
-    "camp holmes",
-    "baguio",
-    "internment",
-    "wwii"
-  ],
-  "timelineTitle": "Baguio internees, 1941–45",
   "timeline": [
     {
       "date": "Dec 1941",
@@ -35,6 +21,11 @@
       "what": "Bilibid internees liberated"
     }
   ],
+  "period": "War and Memory",
+  "dek": "In an internment camp in Baguio, thirty-two women knitted socks for the same man on the eve of his escape, and not one of them told another.",
+  "author": "Lexi Zotomayor",
+  "imageAlt": "Group photograph of women and young children seated on a grassy slope in front of a wooden house in Baguio",
+  "date": "2026-10-24T08:00:00Z",
   "bodyText": "Teddy Tyson did not particularly care for knitting socks, but she sat with the yarn anyway, turning loop after loop until a pair was finished. She even picked up another set that her friend Ora Robinson had left half-done and completed those as well. They were for Herbie Zwick, who had asked for them two days earlier. That evening in Camp Holmes, as the light faded, Teddy noticed other women in the barracks sitting quietly with their needles, their hands moving in the same steady rhythm. No one asked what the others were making. No one offered a word. In an internment camp, silence was not merely polite; it was the only reliable shield.\n\nThe next morning, April 4, 1944, roll call broke the quiet. Two men were missing. Herbie Zwick and Richard Green had slipped past the guards into the night, headed for Colonel Calvert’s guerrilla outfit in the mountains. Walking back to the barracks, Teddy remarked casually to a friend, “You know, I knitted a pair of socks for Herbie. He picked them up only last night.”\n\n![Group photograph of women and young children seated on a grassy slope in front of a wooden house in Baguio](/assets/uploads/cms/camp-holmes-women-children.jpg \"Women and children of Baguio’s foreign community, photographed before the war. Many would spend the war interned at Camp John Hay and Camp Holmes.\")\n\nIt was only then that the truth revealed itself. By noon, the women realized that thirty-two of them had independently knitted socks for Herbie. Thirty-two women, working side by side in the same cramped rooms, had crafted thirty-two pairs of wool socks for a man about to run into the hills, and not a single one had whispered a word to her neighbor. Under the pressure of captivity, trust was a fragile, dangerous commodity. “You had been trained never to talk,” Teddy recalled years later. “Even to your best friends.”\n\n{{< pull cite=\"Teddy Tyson, former internee\" >}}You had been trained never to talk. Even to your best friends.{{< /pull >}}\n\nThe Japanese command was furious. Meals were canceled, and the entire camp—men and women alike—was herded into a single barracks to be lectured through an interpreter on how poorly they had repaid the guards’ leniency. Kempeitai officers hauled several inmates away for interrogation. People like Bill Moule and the neighbors near the escapees’ cubicles bore the brunt of the military police’s cruelty before the camp commandant, Rokuro Tomibe, intervened to bring them back.\n\nYet the women remained unmolested. Their absolute, genuine ignorance of the escape plan—and the simple, shared discipline that kept their tongues still—was the very thing that saved them.\n\nDecades later, when the former captives gathered in quieter times to speak of the war, the thirty-two pairs of socks remained one of their fondest, most enduring memories. It was an unscripted act of quiet defiance: thirty-two pairs of hands working in the dark, asking no questions, binding a community together through the long, uncertain years.",
   "comments": [
     {
@@ -42,5 +33,14 @@
       "text": "This is how an approved comment appears under a story. Delete it in the editor.",
       "date": "2026-10-24T09:00:00Z"
     }
-  ]
+  ],
+  "timelineTitle": "Baguio internees, 1941–45",
+  "title": "The Silent Knitters",
+  "tags": [
+    "camp holmes",
+    "baguio",
+    "internment",
+    "wwii"
+  ],
+  "image": "/assets/uploads/cms/campholmeschildren.jpg"
 }
